@@ -1,8 +1,10 @@
+package io.github
+
 import java.io.InvalidClassException
 import org.junit.Assert._
 import org.junit.Test
 
-class MyLogger {
+object MyLogger {
   def printPrettyLog(message : String) : Unit = {
     if (message.getClass == classOf[String]){
       println("********** " + message + " **********")
